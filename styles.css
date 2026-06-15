@@ -1,0 +1,287 @@
+/*
+  Note for Mr. Hardman you see how it says hero for the heading image area thingy
+  I did not know what else to call it so I asked generative ai for help and 
+  it told me to call it that instead of something like main-image-header and 
+  I couldnt think of anything else so I went with it. Also others Like cta-btn 
+  taht was also ai since I did not knwo what to call it because i thought main-menu 
+  wasnt descreptive enough if I went on to maek another website which actually has 
+  there whole menu. Also I saw on tiktok that you should put your CSS in a way which 
+  make it liek your HTML code so from header to nav to main to etc etc so that wht I 
+  tried to do could you let me know if I di dit right or made soenm mistakes in the 
+  feedback.
+*/
+
+/* Targets all elements */
+* {
+  box-sizing: border-box; /* Includes pading in element size */
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding */
+}
+
+/* Controls page scrolling */
+html {
+  scroll-behavior: smooth; /* Smooth section scrolling */
+}
+
+/* Main page styles */
+body {
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Sets page font */
+  background: ghostwhite; /* Light background color */
+  color: #1a1a1a; /* Default text color (acording to ai) */
+  line-height: 1.7; /* Increases line spacing */
+  font-size: 16px; /* Default text size */
+}
+
+/* Header section */
+.main-header {
+  background: #d32f2f; /* Red header background */
+  position: sticky; /* Stays top while scrolling */
+  top: 0; /* Sticks at top */
+  z-index: 1000; /* Appears above content */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Adds shadow */
+}
+
+/* Navigation container */
+.nav-container {
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space beteen items */
+  align-items: center; /* Vertical centering */
+  max-width: 1200px; /* Maximum container width */
+  margin: auto; /* Centers container */
+  padding: 1rem 2rem; /* Adds spacing */
+}
+
+/* Logo link */
+.logo a {
+  color: #ffc107; /* Yellow text */
+  font-size: 1.8rem; /* Large logo */
+  font-weight: 800; /* Extra bold */
+  text-decoration: none; /* Removes underline */
+  text-transform: uppercase; /* Makes uppercase */
+  letter-spacing: 1.5px; /* Adds letter spacing */
+}
+
+/* Navigation links list */
+.nav-links {
+  display: flex; /* Horizontal links */
+  list-style: none; /* Removes bullets */
+  gap: 2.5rem; /* Space between links */
+}
+
+/* Individual navigation links */
+.nav-links a {
+  color: ghostwhite; /* White text */
+  text-decoration: none; /* Removes underline */
+  font-weight: 600; /* Semi ish bold */
+  font-size: 1.1rem; /* Larger text */
+  padding-bottom: 0.3rem; /* Bottom spacing */
+  border-bottom: 3px solid transparent; /* Hiden border */
+  transition: 0.3s ease; /* Smooth hover */
+}
+
+/* Link hover effects */
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffc107; /* Yellow on hover */
+  border-bottom: 3px solid #ffc107; /* Shows underline */
+}
+
+/* Hero section */
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    /* Dark overlay over image */ url("images/someimg.jpeg") center/cover
+      no-repeat; /* Background image and not repeated */
+  height: 55vh; /* 55% of screen height */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical layout */
+  justify-content: center; /* Center verticcally */
+  align-items: center; /* Center horizonntally */
+  text-align: center; /* Center text */
+  color: ghostwhite; /* White text */
+  padding: 0 1.5rem; /* Side spacing */
+}
+
+/* Hero heading */
+.hero h1 {
+  font-size: 3.5rem; /* Large heading */
+  font-weight: 900; /* Extra bold */
+  margin-bottom: 1rem; /* Bottom spaccing */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Text shadow */
+}
+
+/* Hero paragraph */
+.hero p {
+  font-size: 1.4rem; /* Larger text */
+  margin-bottom: 2rem; /* Bottom spacing */
+  max-width: 700px; /* Limits width */
+}
+
+/* Main button */
+.cta-btn {
+  background: #ffc107; /* Yellow background */
+  color: #1a1a1a; /* Dark text */
+  padding: 1rem 2.5rem; /* Button spacing */
+  font-size: 1.2rem; /* Larger text */
+  font-weight: 700; /* Bold text */
+  text-decoration: none; /* Removes underline */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: 0.2s ease; /* Smooth hover */
+}
+
+/* Button hover */
+.cta-btn:hover {
+  transform: scale(1.08); /* Slight enlargement */
+  background: #ffd54f; /* Lighter yellow */
+}
+
+/* Content container */
+.container {
+  max-width: 1200px; /* Limit width */
+  margin: auto; /* Centers content */
+  padding: 4rem 1.5rem; /* Adds spacing */
+}
+
+/* Section heading */
+.section-title {
+  font-size: 2.5rem; /* Large title */
+  text-align: center; /* Centers title */
+  color: #d32f2f; /* Red text */
+  margin-bottom: 1rem; /* Bottom spacin */
+}
+
+/* Section subtitle */
+.section-subtitle {
+  text-align: center; /* Centers text */
+  color: #757575; /* Gray text */
+  margin-bottom: 3rem; /* Bottom spacing */
+  font-size: 1.1rem; /* Larger text */
+}
+
+/* Grid layout */
+.grid-layout {
+  display: grid; /* Grid system */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive columns */
+  gap: 2.5rem; /* Space between cards */
+}
+
+/* Cards */
+.card {
+  background: ghostwhite; /* White caerd */
+  border-radius: 8px; /* Rounded edges */
+  overflow: hidden; /* Hides overflow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Shadow effect */
+  text-align: center; /* Centers content */
+  transition: transform 0.3s ease; /* Smooth movement */
+}
+
+/* Card hover */
+.card:hover {
+  transform: translateY(-5px); /* Moves upward */
+}
+
+/* Card images */
+.card img {
+  width: 100%; /* Full width */
+  height: 220px; /* Fixed height */
+  object-fit: cover; /* Prevents stretching */
+}
+
+/* Card content */
+.card-body {
+  padding: 1.5rem; /* Inner spacing */
+}
+
+/* Card heading */
+.card-body h3 {
+  font-size: 1.4rem; /* Larger title */
+  color: #1a1a1a; /* Dark text */
+  margin-bottom: 0.5rem; /* Bottom spacing */
+}
+
+/* Price text */
+.price-tag {
+  font-size: 1.3rem; /* Larger price */
+  color: #d32f2f; /* Red color */
+  font-weight: 700; /* Bold text */
+  margin-bottom: 0.8rem; /* Bottom spacing */
+}
+
+/* Form container */
+.order-form-container {
+  background: ghostwhite; /* White background */
+  padding: 3rem; /* Inner spacing */
+  border-radius: 10px; /* Rounded edges */
+  max-width: 650px; /* Limits width */
+  margin: auto; /* Centers form */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Adds shadow */
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 1.8rem; /* Bottom spacing */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical layout */
+}
+
+/* Labels */
+.form-group label {
+  font-weight: 600; /* Semi bold */
+  margin-bottom: 0.5rem; /* Space below */
+}
+
+/* Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem 1rem; /* Inner spacing */
+  border: 2px solid ghostwhite; /* Border color */
+  border-radius: 6px; /* Rounded corners */
+  font-family: inherit; /* Uses body font */
+  font-size: 1rem; /* Text size */
+  transition: border-color 0.3s ease; /* Smooth border */
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none; /* Removes outline */
+  border-color: #d32f2f; /* Red border */
+}
+
+/* Submit button */
+.submit-btn {
+  background: #d32f2f; /* Red button */
+  color: ghostwhite; /* White text */
+  border: none; /* Removes border */
+  padding: 1rem; /* Button spacing */
+  font-size: 1.2rem; /* Larger text */
+  font-weight: 700; /* Bold text */
+  width: 100%; /* Full width */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Footer */
+.main-footer {
+  background: #1a1a1a; /* Dark background */
+  color: ghostwhite; /* White text */
+  text-align: center; /* Centers content */
+  padding: 3rem 1.5rem; /* Adds spacing */
+}
+
+/* Changes clicked link color */
+.social-links a:visited {
+  color: ghostwhite; /* Keeps visited links white */
+}
+
+/* Changes link while clicked */
+.social-links a:active {
+  color: ghostwhite; /* Keeps active links white */
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Hotline Redesign | Special Deals & Interactive Ordering</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav-container">
+        <div class="logo">
+          <a href="index.html">Pizza Hotline</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home & Menu</a></li>
+          <li><a href="order.html" class="active">Deals & Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <h1 class="section-title">Value Bundles & Deals</h1>
+      <p class="section-subtitle">
+        Get more flavor for less. Perfect configurations for families, parties,
+        or game days.
+      </p>
+
+      <div class="grid-layout" style="max-width: 900px; margin: 0 auto">
+        <div
+          class="card"
+          style="border: 2px dashed red; background-color: ghostwhite"
+        >
+          <div class="card-body">
+            <span
+              style="
+                background-color: #d32f2f;
+                color: ghostwhite;
+                padding: 0.3rem 0.8rem;
+                font-weight: 700;
+                border-radius: 20px;
+                font-size: 0.8rem;
+              "
+              >BEST VALUE</span
+            >
+            <h3 style="margin-top: 1rem; font-size: 1.8rem">
+              The Game Day Combo
+            </h3>
+            <div class="price-tag" style="font-size: 2rem">$24.99</div>
+            <p style="margin-bottom: 1.5rem">
+              Includes 2 Large 3-Topping Signature Pizzas of your complete
+              choice, alongside 10 pieces of seasoned Buffalo hot chicken wings
+              and a cold 2-Liter soda bottle.
+            </p>
+            <a
+              href="#order-form-target"
+              class="cta-btn"
+              style="padding: 0.6rem 1.5rem; font-size: 1rem"
+              >Select Package</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="border: 2px dashed var(--primary-red)">
+          <div class="card-body">
+            <span
+              style="
+                background-color: black;
+                color: ghostwhite;
+                padding: 0.3rem 0.8rem;
+                font-weight: 700;
+                border-radius: 20px;
+                font-size: 0.8rem;
+              "
+              >WEEKDAY SPECIAL</span
+            >
+            <h3 style="margin-top: 1rem; font-size: 1.8rem">
+              Double Trouble Deal
+            </h3>
+            <div class="price-tag" style="font-size: 2rem">$19.99</div>
+            <p style="margin-bottom: 1.5rem">
+              Double down on comfort. Grab two medium-sized single topping pans
+              cooked freshly to your preference. Available for pickup or quick
+              home delivery windows.
+            </p>
+            <a
+              href="#order-form-target"
+              class="cta-btn"
+              style="padding: 0.6rem 1.5rem; font-size: 1rem"
+              >Select Package</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr
+      style="
+        border: 0;
+        border-top: 1px solid ghostwhite;
+        max-width: 1200px;
+        margin: 0 auto;
+      "
+    />
+
+    <main class="container" id="order-form-target">
+      <h2 class="section-title">Express Checkout Engine</h2>
+      <p class="section-subtitle">
+        Provide your dispatch logistics below to send your ticket directly into
+        our active stone baking lines.
+      </p>
+
+      <div class="order-form-container">
+        <form method="get">
+          <div class="form-group">
+            <label for="cust-name">Full Name Contact:</label>
+            <input
+              type="text"
+              id="cust-name"
+              name="cust-name"
+              required
+              placeholder="Example: John Smith"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="order-selection"
+              >Select Pizza Variety or Value Combo Deal:</label
+            >
+            <select id="order-selection" name="order-selection" required>
+              <option value="">
+                -- Click here to select your selection --
+              </option>
+              <option value="margherita">
+                Classic Margherita Pie ($14.99)
+              </option>
+              <option value="pepperoni">The Pepperoni Feast ($16.99)</option>
+              <option value="veggie">Garden Veggie Supreme ($15.99)</option>
+              <option value="gameday">
+                The Game Day Combo Package ($24.99)
+              </option>
+              <option value="double">
+                Double Trouble Deal Package ($19.99)
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery-addr"
+              >Street Destination Delivery Address:</label
+            >
+            <textarea
+              id="delivery-addr"
+              name="delivery-addr"
+              rows="4"
+              required
+              placeholder="Provide your street name, apartment number, and postal code entry details here..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Order To Kitchen
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>
+          &copy; 2026 Pizza Hotline Redesign Concept. Prepared exclusively for
+          Web Development 10S[cite: 3]. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank">Facebook Connection</a>
+          |
+          <a href="https://instagram.com" target="_blank">Instagram Profile</a>
+          |
+          <a href="https://twitter.com" target="_blank">Twitter Updates</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

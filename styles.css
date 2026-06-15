@@ -281,7 +281,7 @@ body {
   color: ghostwhite; /* Keeps visited links white */
 }
 
-/* Changes link while clicked */
-.social-links a:active {
-  color: ghostwhite; /* Keeps active links white */
+/* Sets default text color */
+.social-links {
+  color: ghostwhite; /* White text for links */
 }

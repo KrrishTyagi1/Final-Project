@@ -282,6 +282,6 @@ body {
 }
 
 /* Sets default text color */
-.social-links {
+.social-links a {
   color: ghostwhite; /* White text for links */
 }
